@@ -1,0 +1,1063 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshCart | Fresh Groceries</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">🌿</span>
+
+                <span>
+                    <strong>FreshCart</strong>
+                    <small>Freshness at Your Doorstep</small>
+                </span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for products..."
+                >
+
+                <button id="searchButton">
+                    🔍
+                </button>
+
+            </div>
+
+            <!-- NAV ACTIONS -->
+
+            <div class="nav-actions">
+
+                <button class="icon-button">
+                    👤
+                </button>
+
+                <button class="cart-button" id="cartButton">
+
+                    🛒
+
+                    <span class="cart-count" id="cartCount">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    FRESH • HEALTHY • AFFORDABLE
+                </p>
+
+                <h1>
+                    Good Food
+                    <br>
+                    <span>Better Life</span>
+                </h1>
+
+                <p class="hero-description">
+
+                    Shop fresh fruits, vegetables, dairy,
+                    bakery and everyday groceries from
+                    your trusted grocery store.
+
+                </p>
+
+                <a href="#products" class="primary-button">
+                    Shop Now
+                    <span>→</span>
+                </a>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="organic-badge">
+                    🌿
+                    <strong>100%</strong>
+                    <span>Fresh & Healthy</span>
+                </div>
+
+                <div class="grocery-basket">
+                    🥬 🍅 🥦 🥕
+                    <br>
+                    🍎 🍌 🍊 🥖
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <div class="feature">
+                <div class="feature-icon">🚚</div>
+
+                <div>
+                    <h3>Fast Delivery</h3>
+                    <p>Groceries delivered to your door</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🛡️</div>
+
+                <div>
+                    <h3>Secure Payment</h3>
+                    <p>Safe & trusted transactions</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🌱</div>
+
+                <div>
+                    <h3>Fresh & Quality</h3>
+                    <p>We ensure the best quality</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🎧</div>
+
+                <div>
+                    <h3>24/7 Support</h3>
+                    <p>We're here whenever you need</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SHOP ================= -->
+
+        <section id="products" class="shop-section">
+
+
+            <!-- CATEGORIES -->
+
+            <aside class="categories">
+
+                <h2>☰ &nbsp; Categories</h2>
+
+
+                <!-- ALL PRODUCTS -->
+
+                <button
+                    class="category-button"
+                    data-category="All"
+                >
+                    🛍️
+                    <span>All Products</span>
+                    <b>›</b>
+                </button>
+
+
+                <!-- FRUITS -->
+
+                <button
+                    class="category-button"
+                    data-category="Fruits"
+                >
+                    🍎
+                    <span>Fruits</span>
+                    <b>›</b>
+                </button>
+
+
+                <!-- VEGETABLES -->
+
+                <button
+                    class="category-button"
+                    data-category="Vegetables"
+                >
+                    🥬
+                    <span>Vegetables</span>
+                    <b>›</b>
+                </button>
+
+
+                <!-- DAIRY -->
+
+                <button
+                    class="category-button"
+                    data-category="Dairy"
+                >
+                    🥛
+                    <span>Dairy & Eggs</span>
+                    <b>›</b>
+                </button>
+
+
+                <!-- BAKERY -->
+
+                <button
+                    class="category-button"
+                    data-category="Bakery"
+                >
+                    🥖
+                    <span>Bakery</span>
+                    <b>›</b>
+                </button>
+
+
+                <!-- PANTRY -->
+
+                <button
+                    class="category-button"
+                    data-category="Pantry"
+                >
+                    🥫
+                    <span>Pantry Essentials</span>
+                    <b>›</b>
+                </button>
+
+
+                <!-- SNACKS -->
+
+                <button
+                    class="category-button"
+                    data-category="Snacks"
+                >
+                    🍪
+                    <span>Snacks & Beverages</span>
+                    <b>›</b>
+                </button>
+
+
+                <!-- HOUSEHOLD -->
+
+                <button
+                    class="category-button"
+                    data-category="Household"
+                >
+                    🏠
+                    <span>Household</span>
+                    <b>›</b>
+                </button>
+
+            </aside>
+
+
+
+            <!-- PRODUCTS -->
+
+            <div class="products-area">
+
+                <div class="products-heading">
+
+                    <div>
+
+                        <p>OUR PRODUCTS</p>
+
+                        <h2>🌿 Popular Products</h2>
+
+                        <span>
+                            Top picks for your daily needs
+                        </span>
+
+                    </div>
+
+                    <a href="#products">
+                        View All →
+                    </a>
+
+                </div>
+
+
+                <div class="products-grid" id="productsGrid">
+
+
+                    <!-- PRODUCT 1 -->
+
+                    <div
+                        class="product-card"
+                        data-name="Fresh Apples"
+                        data-price="350"
+                    >
+
+                        <div class="product-image">
+                            🍎
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Fruits
+                            </span>
+
+                            <h3>Fresh Apples</h3>
+
+                            <p class="price">
+                                Rs. 350 <small>/ kg</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <div
+                        class="product-card"
+                        data-name="Fresh Bananas"
+                        data-price="180"
+                    >
+
+                        <div class="product-image">
+                            🍌
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Fruits
+                            </span>
+
+                            <h3>Fresh Bananas</h3>
+
+                            <p class="price">
+                                Rs. 180 <small>/ dozen</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 3 -->
+
+                    <div
+                        class="product-card"
+                        data-name="Fresh Broccoli"
+                        data-price="280"
+                    >
+
+                        <div class="product-image">
+                            🥦
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Vegetables
+                            </span>
+
+                            <h3>Fresh Broccoli</h3>
+
+                            <p class="price">
+                                Rs. 280 <small>/ kg</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 4 -->
+
+                    <div
+                        class="product-card"
+                        data-name="Fresh Tomatoes"
+                        data-price="160"
+                    >
+
+                        <div class="product-image">
+                            🍅
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Vegetables
+                            </span>
+
+                            <h3>Fresh Tomatoes</h3>
+
+                            <p class="price">
+                                Rs. 160 <small>/ kg</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 5 -->
+
+                    <div
+                        class="product-card"
+                        data-name="Fresh Milk"
+                        data-price="220"
+                    >
+
+                        <div class="product-image">
+                            🥛
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Dairy
+                            </span>
+
+                            <h3>Fresh Milk</h3>
+
+                            <p class="price">
+                                Rs. 220 <small>/ litre</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 6 -->
+
+                    <div
+                        class="product-card"
+                        data-name="Farm Fresh Eggs"
+                        data-price="450"
+                    >
+
+                        <div class="product-image">
+                            🥚
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Dairy
+                            </span>
+
+                            <h3>Farm Fresh Eggs</h3>
+
+                            <p class="price">
+                                Rs. 450 <small>/ dozen</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 7 -->
+
+                    <div
+                        class="product-card"
+                        data-name="Whole Wheat Bread"
+                        data-price="180"
+                    >
+
+                        <div class="product-image">
+                            🍞
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Bakery
+                            </span>
+
+                            <h3>Whole Wheat Bread</h3>
+
+                            <p class="price">
+                                Rs. 180 <small>/ loaf</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 8 -->
+
+                    <div
+                        class="product-card sold-card"
+                        data-name="Chocolate Cookies"
+                        data-price="250"
+                    >
+
+                        <div class="product-image">
+                            🍪
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Snacks
+                            </span>
+
+                            <h3>Chocolate Cookies</h3>
+
+                            <p class="price">
+                                Rs. 250
+                            </p>
+
+                            <p class="availability sold">
+                                ● Out of Stock
+                            </p>
+
+                            <button
+                                class="add-button sold-button"
+                                disabled
+                            >
+                                Sold Out
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 9 - PANTRY -->
+
+                    <div
+                        class="product-card"
+                        data-name="Premium Basmati Rice"
+                        data-price="450"
+                    >
+
+                        <div class="product-image">
+                            🍚
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Pantry
+                            </span>
+
+                            <h3>Premium Basmati Rice</h3>
+
+                            <p class="price">
+                                Rs. 450 <small>/ 5 kg</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 10 - PANTRY -->
+
+                    <div
+                        class="product-card"
+                        data-name="Cooking Oil"
+                        data-price="650"
+                    >
+
+                        <div class="product-image">
+                            🫗
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Pantry
+                            </span>
+
+                            <h3>Cooking Oil</h3>
+
+                            <p class="price">
+                                Rs. 650 <small>/ litre</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 11 - HOUSEHOLD -->
+
+                    <div
+                        class="product-card"
+                        data-name="Dishwashing Liquid"
+                        data-price="320"
+                    >
+
+                        <div class="product-image">
+                            🧴
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Household
+                            </span>
+
+                            <h3>Dishwashing Liquid</h3>
+
+                            <p class="price">
+                                Rs. 320 <small>/ bottle</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCT 12 - HOUSEHOLD -->
+
+                    <div
+                        class="product-card"
+                        data-name="Laundry Detergent"
+                        data-price="550"
+                    >
+
+                        <div class="product-image">
+                            🧼
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Household
+                            </span>
+
+                            <h3>Laundry Detergent</h3>
+
+                            <p class="price">
+                                Rs. 550 <small>/ pack</small>
+                            </p>
+
+                            <p class="availability available">
+                                ● Available
+                            </p>
+
+                            <button class="add-button">
+                                🛒 Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= OFFER ================= -->
+
+        <section class="offer">
+
+            <div>
+
+                <p>SPECIAL OFFER</p>
+
+                <h2>
+                    Fresh Vegetables
+                    <br>
+                    Up to <span>20% OFF</span>
+                </h2>
+
+                <p>
+                    Get fresh and healthy vegetables
+                    at special prices this week.
+                </p>
+
+                <a href="#products" class="primary-button">
+                    Shop Now →
+                </a>
+
+            </div>
+
+            <div class="offer-image">
+                🥕 🥦 🍅
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about-section">
+
+            <div class="about-image">
+
+                <div class="about-circle">
+                    🌱
+                </div>
+
+                <div class="about-small-card">
+                    ❤️ Loved by our customers
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT FRESHCART
+                </p>
+
+                <h2>
+                    Fresh Food,
+                    <span>Happy Life</span>
+                </h2>
+
+                <p>
+                    FreshCart started with a simple goal:
+                    to make fresh, high-quality groceries
+                    easily accessible to everyone.
+                </p>
+
+                <p>
+                    We believe grocery shopping should be
+                    simple, convenient and enjoyable. That's
+                    why we bring everyday essentials together
+                    in one easy-to-use online store.
+                </p>
+
+                <div class="about-points">
+
+                    <div>✓ Fresh & quality products</div>
+
+                    <div>✓ Affordable everyday prices</div>
+
+                    <div>✓ Convenient home delivery</div>
+
+                    <div>✓ Customer-focused service</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact-section">
+
+            <div>
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Need Help?
+                    <br>
+                    We're Here For You.
+                </h2>
+
+                <p>
+                    Have a question about an order or
+                    product? Contact our support team.
+                </p>
+
+            </div>
+
+            <div class="contact-details">
+
+                <div>
+                    📧
+                    <span>
+                        support@freshcart.com
+                    </span>
+                </div>
+
+                <div>
+                    📞
+                    <span>
+                        +92 300 1234567
+                    </span>
+                </div>
+
+                <div>
+                    📍
+                    <span>
+                        Pakistan
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= CART POPUP ================= -->
+
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart-popup">
+
+            <div class="cart-header">
+
+                <h2>🛒 Your Cart</h2>
+
+                <button id="closeCart">
+                    ✕
+                </button>
+
+            </div>
+
+            <div
+                class="cart-items"
+                id="cartItems"
+            >
+                <!-- JavaScript will add products here -->
+            </div>
+
+            <div class="cart-empty" id="cartEmpty">
+
+                🛒
+
+                <h3>
+                    Your cart is empty
+                </h3>
+
+                <p>
+                    Add some fresh groceries!
+                </p>
+
+            </div>
+
+            <div class="cart-footer">
+
+                <div class="cart-total">
+
+                    <span>Total:</span>
+
+                    <strong id="cartTotal">
+                        Rs. 0
+                    </strong>
+
+                </div>
+
+                <button
+                    class="checkout-button"
+                    id="checkoutButton"
+                >
+                    Proceed to Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h2>
+                    🌿 FreshCart
+                </h2>
+
+                <p>
+                    Freshness at Your Doorstep
+                </p>
+
+                <p>
+                    Making grocery shopping simple,
+                    fresh and convenient.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="#">Home</a>
+                <a href="#products">Shop</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <div>
+
+                <h3>Customer Care</h3>
+
+                <a href="#">FAQs</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Support</a>
+
+            </div>
+
+            <div>
+
+                <h3>Follow Us</h3>
+
+                <div class="socials">
+
+                    <span>f</span>
+                    <span>◎</span>
+                    <span>𝕏</span>
+                    <span>▶</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 FreshCart. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
